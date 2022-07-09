@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import {PostCard, PostWidget, Categories, Header} from '../components/index'
+import {PostCard, PostWidget, Categories} from '../components/index'
 
 
 export default function Home() {
