@@ -4,10 +4,9 @@ import {getPosts} from '../services'
 
 export default function Home({posts}) {
 
-  const post = [
-    {title: 'React Testing', excerpt: 'Learn React Testing'},
-    {title: 'Welcome to God', excerpt: 'Welcome to God House, Pray my boy'}
-  ]
+  const data =  posts.map((post) => (
+    <PostCard post={post.node} key={post.title} />
+  ))
 
   return (
     <div className='container mx-auto px-10 mb-8'>
@@ -19,9 +18,7 @@ export default function Home({posts}) {
 
       <div className='grid grid-cols-1 lg:grid-cols-12 gap-12'>
         <div className='lg:col-span-8 col-span-1'>
-          {posts.map((post) => (
-            <PostCard post={post.node} key={post.title} />
-          ))}
+            {data}
         </div>
         <div className="lg:col-span-4 col-span-1">
             <div className="lg:sticky relative top-8">
