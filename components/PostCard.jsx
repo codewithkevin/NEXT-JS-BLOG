@@ -22,9 +22,7 @@ const PostCard = ({post}) => {
         <div className="bloc lg:flex text-center items-center justify-center mb-8 w-full">
             <div className="flex text-black items-center justify-center mb-4 lg:mb-0 w-full lg:w-auto mr-8">
               <img alt={post.author.name}
-                height='75px'
-                width='45px'
-                className="rounded-[50%]	align-middle"
+                className="h-[35px] w-[35px] rounded-[50%]	align-middle"
                 src={post.author.photo.url}
               />
               <p className="inline align-middle text-gray-700 cursor-pointer ml-2 text-lg">
@@ -43,7 +41,9 @@ const PostCard = ({post}) => {
         </p>
         <div className="text-center">
           <Link href={`/post/${post.slug}`}>
-            <span className="transition duration-500 ease transform hover:-translate-y-1 inline-block bg-blue-600 text-lg font-medium rounded-full text-white px-8 py-3 cursor-pointer">Continue Reading</span>
+            <span className="transition duration-500 ease transform hover:-translate-y-1 inline-block bg-blue-600 text-lg font-medium rounded-full text-white px-8 py-3 cursor-pointer">
+              Continue Reading
+              </span>
           </Link>
         </div>
     </div>
