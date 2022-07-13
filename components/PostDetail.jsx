@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-key */
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable jsx-a11y/alt-text */
 import React from 'react'
@@ -36,7 +37,9 @@ const PostDetail = ({post}) => {
           </div>
         </div>
         <h1 className="mb-8 text-3xl text-black ml-4 font-bold">{post.title}</h1>
-        <p>{post.description}</p>
+        {post.content.raw.children.map((typeObj, index) => {
+          const children = typeObj.children.map((item, itemIndex) => )
+        })}
     </div>
   )
 }
