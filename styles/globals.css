@@ -18,3 +18,9 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.author {
+  font-size: 0.8rem;
+  color: #888;
+  /* position: absolute; */
+}
