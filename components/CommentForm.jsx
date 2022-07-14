@@ -9,6 +9,7 @@ const CommentForm = () => {
   const emailEl = useRef();
   const storeDataEl = useRef();
 
+  const handleCommentSubmission = ("hello")
 
   return (
     <div className='bg-white shadow-lg rounded-lg p-8 pb-12 mb-8 text-black'>
@@ -42,6 +43,15 @@ const CommentForm = () => {
       </div>
 
       {error && <p className="text-xs text-red-500">All fields are required</p>}
+
+      <div 
+      className="mt-8 bg-blue-600 w-fit transition duration-500 ease inline-block text-white text-lg rounded-full px-8 py-3 cursor-pointer hover:bg-black">
+        <button type="button" 
+        onClick={handleCommentSubmission}
+        >
+              Submit
+        </button>
+      </div>
 
     </div>
   )
