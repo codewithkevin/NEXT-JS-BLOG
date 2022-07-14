@@ -9,7 +9,23 @@ const CommentForm = () => {
   const emailEl = useRef();
   const storeDataEl = useRef();
 
-  const handleCommentSubmission = ("hello")
+  const handleCommentSubmission = () =>{
+    setError(false);
+    // const checking = !commentEl.current.value || !nameEl.current.value || !emailEl.current.value
+    
+    const {value: comment} = commentEl.current
+    const {value: name} = nameEl.current
+    const {value: email} = emailEl.current
+
+    const checking = !comment || !name || !email 
+
+    checking ? 
+    setError(true) : 
+    null
+    return;
+
+    const commentObj = {name, email, comment, slug}
+  }
 
   return (
     <div className='bg-white shadow-lg rounded-lg p-8 pb-12 mb-8 text-black'>
@@ -52,7 +68,7 @@ const CommentForm = () => {
               Submit
         </button>
       </div>
-
+        {showSuccessMessage && <p className="text-xl float-right font-bold text-green-500 text">Comments submitted successfully</p>}
     </div>
   )
 }
