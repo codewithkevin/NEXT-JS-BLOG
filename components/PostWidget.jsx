@@ -14,7 +14,8 @@ const PostWidget = ({categories, slug}) => {
       getSimilarPosts(categories, slug).then((result) => setrelatedPost(result))
       :
       getRecentPosts().then((result) => setrelatedPost(result))
-  })
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
 
   console.log(relatedPost)
 
