@@ -24,3 +24,8 @@ a {
   color: #888;
   /* position: absolute; */
 }
+
+.icons:hover {
+  transform: scale(1.5);
+  color: dodgerblue;
+}
