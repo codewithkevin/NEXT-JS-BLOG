@@ -1,5 +1,5 @@
 # CRUD APPLICATION
-<p>This a blog Application developed using Next Js and Graph ql as backend to fextch data.
+<p>This a blog Application developed using Next Js and Graph ql as backend to fectch data.
 
 # TECHNOLOGIES COVERED 
 <ul>
