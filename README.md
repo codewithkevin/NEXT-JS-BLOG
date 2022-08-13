@@ -7,4 +7,5 @@
   <li>GRAPH QL</li>
   <li>GRAPH CMS<li>
   <li>Data Fetching</li>
+  <li>Tailwind Css/li>
 </ul>
